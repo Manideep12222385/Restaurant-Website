@@ -1,4 +1,4 @@
-# kfc-clone-react
+
 
 Blog link:  https://medium.com/@suryatejaparvata/kfc-clone-react-538456a9df43 
 Deploy link: https://mellow-froyo-f88246.netlify.app/
