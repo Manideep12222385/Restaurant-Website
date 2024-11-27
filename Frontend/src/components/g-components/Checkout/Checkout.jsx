@@ -67,9 +67,7 @@ export const Checkout = () => {
               <div id={styles.store}>
                 <i className="fa-solid fa-location-dot"></i>
                 <p>
-                  <span>KFC Mumbai</span> - Hill Road Bandra 400050, Saint John
-                  Baptist Road, near Federal Bank, Mount Mary, Bandra West,
-                  Mumbai, Maharashtra, India
+                  <span>Kanishka dhaba</span> - Mayuri Garden Lane, Revenue Colony, near R.E.C. Petrol Pump, Hanamkonda, Telangana 506004
                 </p>
                 <div>
                   <i className="fa-solid fa-clock"></i> ASAP
@@ -127,7 +125,7 @@ export const Checkout = () => {
                 name="update"
                 onChange={handlechange}
               /> 
-                I want to know about the cool stuff at KFC on Email & SMS (I know
+                I want to know about the cool stuff at Kanishka on Email & SMS (I know
               I can unsubscribe anytime).
             </div>
           </div>
