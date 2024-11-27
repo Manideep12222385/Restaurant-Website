@@ -1,0 +1,107 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 104px;
+    width: 100%;
+    position: absolute;
+    margin-top: -100px;
+    background-color: #fff;
+    /* border :1px solid red; */
+    /* position: fixed ; */
+    /* z-index: auto; */
+}
+.bgcl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 104px;
+    width: 85%;
+    margin: auto;
+    /* background-color: chartreuse; */
+}
+.subpars{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.logo{
+    /* vertical-align: middle; */
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: auto;
+    margin-left: -150px;
+    padding-left: 20px;
+    cursor: pointer ;
+}  
+.fornavmenu{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    font-weight: bold;
+    cursor: pointer ;
+}
+.logoac{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80px;
+    height: 20px;
+    
+}
+.logocart{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+    padding-left: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.fordigit{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+}
+.vl {
+    border-left: 1px solid gray;
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    
+  }
+  .forsignin{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cartitems{
+    margin-top: -20px;
+    margin-left: 3px ;
+    font-size: 15px;
+    font-weight: bold;
+}
+.subpars2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+}

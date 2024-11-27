@@ -1,0 +1,121 @@
+.main{
+    width: 100%;
+    height:max-content;    
+    background-color:#202124;
+    /* border: solid 2px red; */
+}
+.h2 {
+    font-family: 'National2 Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 38px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #ffffff; /* Ensure header text color matches overall theme */
+}
+
+.arrow{
+    
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+.cardnamesp{
+    font-weight: bold;
+    margin-top:50px;
+    font-size:13px; 
+    cursor: pointer ;
+}
+.splitbet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+.lines{
+    width: 50%;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 80px;
+}
+.line{
+  height: 72px;
+  width: 16px;
+  background-color: #E4002B;
+
+}   
+.dist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.carcomp {
+    position: relative; /* Ensures child elements are positioned relative to the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align details at the bottom */
+    width: 310px;
+    height: 380px;
+    background-color: #ffffff;
+    color: #202124;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image stays within bounds */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.carcomp:hover {
+    transform: translateY(-8px);
+}
+
+.imgofcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    z-index: 1; /* Keeps the image below the overlay content */
+}
+
+.carcomp:hover .imgofcard {
+    transform: scale(1.1); /* Zooms the image on hover */
+    filter: blur(5px); /* Applies a blur effect to the image */
+}
+
+.btpar,
+.offer {
+    position: relative; /* Positions them over the image */
+    z-index: 2; /* Ensures text and buttons are above the image */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Moves them slightly down */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    font-family: 'National2 Condensed', sans-serif;
+}
+
+.carcomp:hover .btpar,
+.carcomp:hover .offer {
+    opacity: 1; /* Fully visible on hover */
+    transform: translateY(0); /* Moves back to the original position */
+}

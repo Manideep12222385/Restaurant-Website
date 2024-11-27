@@ -1,0 +1,156 @@
+/* General styling */
+.address {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  background-image: url("freepik__center-will-be-the-just-a-white-table__62286.png");
+  height: 250px;
+  background-position: center;
+}
+
+.deals-image-text {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 74px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 60px;
+}
+
+.stripes {
+  margin-left: 250px;
+}
+
+.offertitle {
+  margin-left: 250px;
+}
+
+/* Deals container and card styles */
+.deals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  padding: 20px;
+  width: 80%;
+  margin-left: 290px;
+}
+
+.card {
+  border: 1px solid #494949;
+  flex-direction: column;
+  max-width: 350px;
+  
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 40px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-align: left;
+}
+
+.offers-menu-product-image {
+  width: auto;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.offers-deals-product-title {
+  color: #e4002b;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 30px;
+  font-family: National 2 Condensed;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  padding: 0px 15px 2px;
+}
+
+.offers-deals-product-desc {
+  font-family: National 2 Condensed;
+  font-weight: 500;
+  padding: 0px 15px 2px;
+}
+.loadingContainer{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.view-details-btn {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: National2-Medium;
+  text-decoration: underline;
+  padding: 1px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #494949;
+  cursor: pointer;
+}
+
+.redeem-btn {
+  padding: 10px 20px;
+  border-radius: 200px;
+  height: 44px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: National2-Medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #202124;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.redeem-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.hotncrispydiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .deals-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .deals-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .deals-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 card for very small devices */
+  }
+
+  .deals-image-text {
+    font-size: 48px; /* Adjust banner text size for small screens */
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .offertitle {
+    font-size: 24px; /* Adjust title size for small screens */
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+.popup {
+    position: relative; /* Changed from fixed to relative */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    z-index: 99;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Add padding to make space for dropdown effect */
+    animation: dropdown 0.3s ease-in-out; /* Smooth dropdown animation */
+}
+
+.popup_inner {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Smooth dropdown animation */
+@keyframes dropdown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Push the content below */
+.content {
+    margin-top: 20px; /* Space below the popup */
+}

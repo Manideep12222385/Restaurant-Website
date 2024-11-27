@@ -1,0 +1,38 @@
+.secblackmain{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    background-color: black;
+    height:auto;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 999;
+    position: relative;
+    padding: 20px;
+   
+}
+.setblackmain{
+
+}
+.secblactext{
+    color: white;
+}
+.secblackbut{
+    background-color: #E71A41;
+    border-radius: 30px;
+    height: 45px;
+    line-height: 24px;
+    font-size: 14px;
+    color: beige;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;  
+    padding-left:30px;
+    padding-right:30px;
+    cursor: pointer ;
+}

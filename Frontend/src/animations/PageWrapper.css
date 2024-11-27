@@ -1,0 +1,33 @@
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .curtain {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    /* background-color: #333; */
+    z-index: 999;
+  }
+  .box{
+    position: fixed;
+    
+    width: 50vw;
+    height: 50vh;
+
+  }
+  .left-curtain {
+    left: 0;
+  }
+  
+  .right-curtain {
+    right: 0;
+  }
+  
+  .page-content {
+    
+    /* z-index: 1; */
+  }
+  
